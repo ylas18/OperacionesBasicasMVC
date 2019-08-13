@@ -15,10 +15,14 @@ import modelo.Modelo;
 
 public class Main
 {
+    /**
+     * Iniciamos el programa iniciando las clases
+     * @param args 
+     */
     public static void main(final String[] args) {
-        final Modelo modelo = new Modelo();
-        final Vista vista = new Vista();
-        final Controlador controlador = new Controlador(vista, modelo);
+        Modelo modelo = new Modelo();
+        Vista vista = new Vista();
+        Controlador controlador = new Controlador(vista, modelo);
         controlador.inicio();
         vista.setVisible(true);
     }

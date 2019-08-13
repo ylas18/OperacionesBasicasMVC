@@ -11,14 +11,24 @@ package modelo;
  */
 
 import javax.swing.DefaultListModel;
+/**
+ * @author Yesid
+ */
 
+/*
+Creamos las variables necesarias
+*/
 public class Modelo
 {
-    public DefaultListModel lista;
-    private int num1;
-    private int num2;
-    private int resultado;
+    public DefaultListModel lista;//lista donde se almacena los resultados de cada operacion
+    private int num1;//variable que almacena el primer numero para la operacion
+    private int num2;//variable que almacena el segundo numero para la operacion
+    private int resultado;//variable que almacena el resultado de la operacion
     
+    /**
+     * Creamos los Get and Set para poder usa las variables tando de escritura como lectura
+     * @return 
+     */
     public int getNum1() {
         return this.num1;
     }
@@ -50,19 +60,29 @@ public class Modelo
     public void setLista(final DefaultListModel lista) {
         this.lista = lista;
     }
-    
+    /**
+     * metodo que suma las variables num 1 y num 2
+     * @return 
+     */
     public int Suma() {
         return this.resultado = this.num1 + this.num2;
     }
-    
+    /**
+     * metodo que resta las variables num 1 y num 2
+     * @return 
+     */
     public int Resta() {
         return this.resultado = this.num1 - this.num2;
     }
-    
+    /*
+    * metodo que multiplica las variables num 1 y num 2
+    */
     public int Multiplicacion() {
         return this.resultado = this.num1 * this.num2;
     }
-    
+    /*
+    * metodo que divide las variables num 1 y num 2
+    */
     public int Division() {
         return this.resultado = this.num1 / this.num2;
     }
